@@ -10,10 +10,10 @@ class ServerInfo(commands.Cog):
     async def server_info(self, inter: disnake.ApplicationCommandInteraction):
         await inter.response.send_message(
             f"# Информация о сервере"
-            f"- **Название сервера:** {inter.guild.name}"
-            f"- **Описание сервера:** {inter.guild.description}"
-            f"- **Уровень верификации:** {inter.guild.verification_level}"
-            f"- **AFK voice:** {inter.guild.afk_channel}")
+            f"\n- **Название сервера:** {inter.guild.name}"
+            f"\n- **Описание сервера:** {inter.guild.description}"
+            f"\n- **Уровень верификации:** {inter.guild.verification_level}"
+            f"\n- **AFK voice:** {inter.guild.afk_channel}")
 
 
 def setup(bot: commands.Bot):
